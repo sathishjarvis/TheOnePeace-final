@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://theonepeace.in/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Add these once the pages really exist and return 200:
+  <url><loc>https://theonepeace.in/privacy-policy</loc></url>
+  <url><loc>https://theonepeace.in/terms-and-conditions</loc></url>
+  <url><loc>https://theonepeace.in/about-us</loc></url>
+  <url><loc>https://theonepeace.in/contact-us</loc></url>
+  -->
+</urlset>

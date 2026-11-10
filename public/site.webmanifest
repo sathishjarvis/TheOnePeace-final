@@ -1,0 +1,9 @@
+{
+  "name": "The One Peace Technology",
+  "short_name": "The One Peace",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080d19",
+  "theme_color": "#080d19",
+  "icons": [{ "src": "/favicon.png", "sizes": "512x512", "type": "image/png" }]
+}

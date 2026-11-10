@@ -1,0 +1,5 @@
+.stats { padding: 20px 0 110px; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding-top: 70px; border-top: 1px solid rgba(255,255,255,.1); }
+.stat .stat-num { font-family: var(--display); font-weight: 800; font-size: clamp(46px, 6vw, 84px); letter-spacing: -0.04em; line-height: 1; background: linear-gradient(120deg, #fff, #a9a3ff 60%, var(--accent-2)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.stat p { margin-top: 12px; font-size: 15px; color: #9aa3b8; }
+@media (max-width: 900px) { .stats { padding-bottom: 80px; } .stats-grid { grid-template-columns: 1fr 1fr; gap: 40px 20px; padding-top: 50px; } }

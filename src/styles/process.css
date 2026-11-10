@@ -1,0 +1,20 @@
+.process { background: #fff; }
+.process-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 90px; align-items: start; }
+.process-sticky { position: sticky; top: 130px; }
+.process-sticky .lead { margin-top: 28px; }
+.timeline { position: relative; padding-left: 70px; display: flex; flex-direction: column; gap: 70px; padding-block: 10px; }
+.tl-track { position: absolute; left: 22px; top: 22px; bottom: 22px; width: 3px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.tl-fill { height: 100%; background: linear-gradient(180deg, var(--accent), var(--accent-2)); transform-origin: 50% 0; }
+.tl-step { position: relative; display: block; }
+.tl-dot { position: absolute; left: -70px; top: -2px; width: 46px; height: 46px; display: grid; place-items: center; border-radius: 50%; background: var(--ink); color: #fff; font-family: var(--display); font-weight: 800; font-size: 18px; box-shadow: 0 0 0 6px #fff; }
+.tl-step h3 { font-family: var(--display); font-weight: 800; font-size: 32px; letter-spacing: -0.03em; }
+.tl-step p { margin-top: 10px; font-size: 16px; line-height: 1.7; color: var(--muted); max-width: 460px; }
+.process .tags.dark span { color: var(--text); }
+@media (max-width: 900px) {
+  .process-grid { grid-template-columns: 1fr; gap: 40px; }
+  .process-sticky { position: static; }
+  .timeline { gap: 48px; padding-left: 62px; }
+  .tl-dot { left: -62px; width: 42px; height: 42px; font-size: 16px; }
+  .tl-track { left: 20px; }
+  .tl-step h3 { font-size: 26px; }
+}

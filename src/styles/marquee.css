@@ -1,0 +1,6 @@
+.marquee { overflow: hidden; background: linear-gradient(100deg, var(--accent), #0f2753 65%, var(--accent-2)); color: #fff; padding: 22px 0; }
+.marquee-track { display: flex; width: max-content; will-change: transform; }
+.marquee-row { display: flex; flex-shrink: 0; }
+.marquee-item { display: inline-flex; align-items: center; gap: 28px; padding-right: 28px; font-family: var(--display); font-weight: 700; font-size: clamp(22px, 3vw, 34px); letter-spacing: -0.02em; white-space: nowrap; }
+.marquee-item svg { opacity: 0.7; }
+@media (max-width: 600px) { .marquee { padding: 16px 0; } .marquee-item { gap: 18px; padding-right: 18px; } }

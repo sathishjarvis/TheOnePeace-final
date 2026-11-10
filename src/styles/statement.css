@@ -1,0 +1,4 @@
+.statement { background: var(--paper); }
+.statement-inner { max-width: 1000px; }
+.statement-text { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 4.2vw, 54px); line-height: 1.18; letter-spacing: -0.03em; }
+.fw { display: inline-block; margin-right: 0.26em; }

@@ -1,0 +1,15 @@
+.contact { position: relative; padding: 80px 0; background: linear-gradient(135deg, #080d19 0%, #1a1650 60%, #2c2a8a 100%); color: #fff; overflow: hidden; isolation: isolate; text-align: center; }
+.contact-glow { position: absolute; z-index: -1; border-radius: 50%; filter: blur(80px); animation: drift 12s ease-in-out infinite; }
+.contact-glow.g1 { width: 520px; height: 520px; right: -140px; top: -160px; background: rgba(108,92,255,.45); }
+.contact-glow.g2 { width: 440px; height: 440px; left: -120px; bottom: -160px; background: rgba(25,211,230,.28); animation-direction: reverse; }
+@keyframes drift { 0%, 100% { transform: translate(0,0) scale(1); } 50% { transform: translate(40px,-30px) scale(1.12); } }
+.contact-inner .kicker { margin-bottom: 26px; }
+.contact h2 { font-size: clamp(38px, 6.6vw, 92px); max-width: 960px; margin-inline: auto; }
+.contact-copy { max-width: 520px; margin: 28px auto 0; font-size: 18px; line-height: 1.65; color: #c3c8ea; }
+.contact-btn { display: inline-flex; align-items: center; gap: 10px; margin-top: 38px; padding: 19px 32px; border-radius: 99px; background: #fff; color: var(--ink); font-size: 16px; font-weight: 700; box-shadow: 0 16px 50px rgba(0,0,0,.35); }
+.contact-meta { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px 40px; margin-top: 80px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.12); font-size: 14px; font-weight: 500; }
+.contact-meta span { display: flex; align-items: center; gap: 10px; color: #b7bcf0; }
+.contact-meta a { text-decoration: none; transition: color .25s; }
+.contact-meta a:hover { color: #fff; }
+@media (max-width: 900px) { .contact { padding: 100px 0; } }
+@media (max-width: 600px) { .contact-copy { font-size: 16px; } .contact-meta { flex-direction: column; align-items: center; margin-top: 56px; } }

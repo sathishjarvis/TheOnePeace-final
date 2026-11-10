@@ -1,0 +1,16 @@
+.loader { position: fixed; inset: 0; z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--ink); color: #fff; overflow: hidden; isolation: isolate; animation: ld-in .4s ease both; }
+.loader .blob.b1 { z-index: -1; } .loader .blob.b2 { z-index: -1; }
+@keyframes ld-in { from { opacity: 0; } to { opacity: 1; } }
+.ld-orbit { position: relative; display: grid; place-items: center; width: 490px; height: 490px; }
+.ld-ring { position: absolute; border-radius: 50%; }
+.ld-ring.a { inset: 0; border: 3px solid transparent; border-top-color: var(--accent); border-right-color: #4f8dff; animation: spin 1s linear infinite; }
+.ld-ring.b { inset: 16px; border: 3px solid transparent; border-bottom-color: var(--accent-2); border-left-color: var(--warm); animation: spin 2.2s linear infinite reverse; }
+.ld-ring.c { inset: 36px; border: 1px dashed rgba(255,255,255,.22); animation: spin 9s linear infinite; }
+.ld-mark { display: grid; place-items: center; width: 85px; height: 85px; border-radius: 22px; background: rgba(15,23,48,.85); border: 1px solid rgba(255,255,255,.12); box-shadow: 0 0 40px rgba(108,92,255,.45); font-family: var(--display); font-weight: 800; font-size: 32px; font-style: italic; letter-spacing: -.04em; background-image: linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip: padding-box; color: #fff; animation: floaty 3s ease-in-out infinite; }
+.ld-mark img { width: 90%; height: 90%; object-fit: cover; border-radius: 22px; }
+.ld-name { margin-top: 38px; font-family: "Bricolage Grotesque", "DM Sans", system-ui, sans-serif ; font-weight: 800; font-size: 20px; letter-spacing: .3em; }
+.ld-sub { margin-top: 8px; font-size: 15px; color: #8b94ab; }
+.ld-bar { margin-top: 30px; width: min(260px, 70vw); height: 5px; border-radius: 99px; background: rgba(255,255,255,.1); overflow: hidden; }
+.ld-bar i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--accent), #4f8dff, var(--accent-2)); transition: width .15s ease-out; }
+.ld-meta { margin-top: 10px; width: min(260px, 70vw); display: flex; justify-content: space-between; font-size: 12px; color: #9aa3b8; }
+.ld-meta b { color: #fff; font-variant-numeric: tabular-nums; }
